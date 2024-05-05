@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EncriptadorG6</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="head">
+      <img class="logo" src="img1/Logo.png" alt="Logo" />
+    </header>
+    <div class="container">
+      <div class="codificador">
+        <textarea
+          name="texto"
+          class="texto"
+          id="texto1"
+          cols="40"
+          rows="15"
+          placeholder="Ingresa el texto a encriptar"
+        ></textarea>
+
+        <div class="terminos">
+          <p>&#10071;Solo letras minusculas y sin acentos</p>
+        </div>
+        <div class="botones">
+          <button class="btn-encriptador" type="button" onclick="encriptar()">
+            Encriptar
+          </button>
+          <button
+            class="btn-desencriptador"
+            type="button"
+            onclick="desencriptar()"
+          >
+            Desencriptar
+          </button>
+        </div>
+      </div>
+
+      <div class="encriptado">
+        <img src="img1/Muñeco.png" alt="" id="persona" />
+
+        <div class="mensaje-encriptado" id="mensaje-encriptado">
+          <h2 id="encabezado-mensaje">Ningún mensaje fue encontrado</h2>
+          <!-- <p id="parrafo">Ingresa el texto que deseas encriptar o desencriptar.</p> -->
+          <textarea
+            name="mensaje"
+            id="mensaje"
+            class="mensaje"
+            cols="40"
+            rows="10"
+          ></textarea>
+          <div class="btn-copiar">
+            <button class="btn-copy" type="button" onclick="copiar()">
+              Copiar texto
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <footer class="foote"><p class="p-p">Gildebran Ventura - 2024</p></footer>
+  <script src="accion.js"></script>
+</html>
